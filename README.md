@@ -18,7 +18,7 @@ The project focuses on secure authentication, backend logic, and user-specific d
 - Express
 - Prisma ORM
 - Neon (PostgreSQL)
-- Authentication (sessions / JWT)
+- Authentication 
 - Email API integration
 - HTML / CSS / JavaScript
 
