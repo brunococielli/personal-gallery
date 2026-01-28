@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First Page</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h1>Welcome to your Galery!</h1>
+	<button class="logBtn">Log in</button>
+	<button id="forgotBtn">I don't have an account</button>
+
+	<p class="readme-link">
+  <a href="#" id="readmeBtn">What is this project?</a>
+	</p>
+
+	<div id="readmeModal" class="modal hidden">
+		<div class="modal-content2">
+			<h2>About this project</h2>
+			<p>
+				This is a personal gallery application built with Node.js, Express, and Prisma, featuring user authentication. Users can create an account, upload images, and manage their own private gallery.
+			</p>
+
+			<p>
+				The app includes upload limits, image validation, and authentication
+				middleware for security.
+			</p>
+
+			<button id="closeReadme">Close</button>
+		</div>
+	</div>
+
+	<script type="module" src="./js/main.js"></script>
+</body>
+</html>
