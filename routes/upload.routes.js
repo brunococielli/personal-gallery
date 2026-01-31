@@ -2,9 +2,9 @@ import express from "express"
 import fs from "fs"
 import path from "path"
 
-import prisma from "../personal-gallery/db.js"
-import { upload } from "../personal-gallery/upload.js"
-import { authMiddleware } from "../personal-gallery/middleware/authMiddleware.js"
+import prisma from "../db.js"
+import { upload } from "../upload.js"
+import { authMiddleware } from "../middleware/authMiddleware.js"
 
 const router = express.Router()
 
@@ -26,7 +26,7 @@ router.post(
 			return res.status(400).json({ error: "Image limit reached" })
 		}	
 		
-    const imagePath = `/personal-gallery/uploads/${req.file.filename}`
+    const imagePath = `/uploads/${req.file.filename}`
 
     await prisma.user.update({
       where: { id: req.user.id },
@@ -52,7 +52,6 @@ router.delete("/deleteImage", authMiddleware, async (req, res) => {
   const filename = path.basename(src)
   const filePath = path.join(
     process.cwd(),
-    "personal-gallery",
     "uploads",
     filename
   )

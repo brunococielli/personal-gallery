@@ -1,3 +1,2 @@
 node_modules/
-personal-gallery/.env
-personal-gallery/node_modules/
+.env
