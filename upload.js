@@ -1,7 +1,7 @@
 import multer from "multer"
 import path from "path"
 
-const uploadDir = path.join(process.cwd(), "personal-gallery", "uploads")
+const uploadDir = path.join(process.cwd(), "uploads")
 
 const storage = multer.diskStorage({
   destination: uploadDir,

@@ -3,8 +3,8 @@ import bcrypt from "bcrypt"
 import crypto from "crypto"
 import { Resend } from "resend"
 
-import prisma from "../personal-gallery/db.js"
-import { sessions } from "../personal-gallery/sessions.js"
+import prisma from "../db.js"
+import { sessions } from "../sessions.js"
 
 const router = express.Router()
 const resend = new Resend(process.env.RESEND_API_KEY)
