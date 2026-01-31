@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-		"start": "node server.js",
-		"postinstall": "prisma generate",
+    "start": "node server.js",
+    "postinstall": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,5 +20,8 @@
     "multer": "^2.0.2",
     "prisma": "^6.19.1",
     "resend": "^6.5.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.10"
   }
 }
