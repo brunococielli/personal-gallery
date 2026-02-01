@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for personal-gallery on 2026-02-01T12:56:44Z
+# fly.toml app configuration file generated for personal-gallery on 2026-02-01T13:21:14Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'personal-gallery'
-primary_region = 'iad'
+primary_region = 'gru'
 
 [build]
 
@@ -20,4 +20,4 @@ primary_region = 'iad'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024
+  memory_mb = 256
