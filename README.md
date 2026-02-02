@@ -20,7 +20,7 @@ The project focuses on secure authentication, backend logic, and user-specific d
 - Neon (PostgreSQL)
 - Authentication 
 - Email API integration
-- HTML / CSS / JavaScript
+- JavaScript / HTML / CSS
 
 ## How It Works
 
