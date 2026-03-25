@@ -1,4 +1,4 @@
-# Personal Gallery 🖼️
+# Personal Gallery 
 
 A personal image gallery application that allows users to create an account, authenticate, and manage their own private image collection.  
 The project focuses on secure authentication, backend logic, and user-specific data handling.
